@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2022_01_22_034156) do
 
   create_table "roles", force: :cascade do |t|
     t.string "name"
-    t.string "display_name"
+    t.string "code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

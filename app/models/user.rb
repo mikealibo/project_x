@@ -7,6 +7,6 @@ class User < ApplicationRecord
   has_and_belongs_to_many :roles
 
   def has_role?(role_sym)
-    roles.any? { |r| r.name.underscore.to_sym == role_sym }
+    roles.any? { |r| r.code.to_sym == role_sym }
   end
 end
