@@ -1,0 +1,5 @@
+%h1 Member Dashboard
+
+- if current_user.present?
+  = link_to destroy_user_session_path, method: :delete, type: 'button' do
+    Sign Out
